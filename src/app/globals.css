@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-Thin.otf") format("opentype");
+    font-weight: 100;
+    font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-ExtraLight.otf") format("opentype");
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-Light.otf") format("opentype");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-SemiBold.otf") format("opentype");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-ExtraBold.otf") format("opentype");
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-Black.otf") format("opentype");
+    font-weight: 900;
+    font-display: swap;
+}
+
+:root {
+    /* 베이스 컬러 */
+    --background: #fafafa;
+    --foreground: #01010b;
+    --primary: #39e291;
+    --secondary: #618e76;
+    --border: #d7d7d7;
+
+    /* 버튼 */
+    --btn-primary: var(--primary);
+    --btn-secondary: (--secondary);
+    --btn-border: var(--border);
+
+    /* 사이드 바 */
+    --sidebar-border: var(--border);
+    --sidebar-width: 240px;
+    --sidebar-height: 100vh;
+
+    /* 컨테이너 */
+    --container-border: var(--border);
+    --container-width: calc(100vw - var(--sidebar-width) - 32px);
+    --container-height: calc(100vh - 32px);
+    --container-background: #dcdcdc;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        /* 베이스 컬러 */
+        --background: #01010b;
+        --foreground: #fafafa;
+        --border: #1d1d1d;
+
+        --container-background: #020202;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+        Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+        "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
 }
