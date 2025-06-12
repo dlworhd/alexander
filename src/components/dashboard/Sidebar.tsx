@@ -27,25 +27,25 @@ export default function SideBar() {
         {
             id: 1,
             name: "Dashboard",
-            path: "/",
+            path: "/dashboard",
             icon: <MenuIcon width={20} height={20} />,
         },
         {
             id: 2,
             name: "Inbox",
-            path: "/inbox",
+            path: "/dashboard/inbox",
             icon: <InboxIcon width={20} height={20} />,
         },
         {
             id: 3,
             name: "Issues",
-            path: "/issues",
+            path: "/dashboard/issues",
             icon: <CircleDashedIcon width={20} height={20} />,
         },
         {
             id: 4,
             name: "Calendar",
-            path: "/calendar",
+            path: "/dashboard/calendar",
             icon: <CalendarIcon width={20} height={20} />,
         },
     ];
