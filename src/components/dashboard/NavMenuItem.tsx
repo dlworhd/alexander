@@ -17,7 +17,7 @@ interface NavMenuItemProps {
 export default function NavMenuItem({ item }: NavMenuItemProps) {
     return (
         <Link href={item.path}>
-            <li className={cn("flex gap-4")}>
+            <li className={cn("text-sm flex gap-4 hover:opacity-40")}>
                 <div>{item.icon}</div>
                 <div>{item.name}</div>
             </li>

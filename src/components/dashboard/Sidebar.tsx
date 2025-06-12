@@ -8,8 +8,12 @@ import NavHeader from "./NavHeader";
 import {
     CalendarIcon,
     CircleDashedIcon,
+    GroupIcon,
     InboxIcon,
+    LogOutIcon,
     MenuIcon,
+    ProjectorIcon,
+    SettingsIcon,
 } from "lucide-react";
 import NavMenuItem, { NavItem } from "./NavMenuItem";
 import { Select, SelectItem } from "../common/Select";
@@ -19,9 +23,9 @@ export default function SideBar() {
     const [isSelectVisible, setIsSelectVisible] = useState(false);
 
     const selectItems: SelectItem[] = [
-        { id: 1, value: "프로젝트" },
-        { id: 2, value: "설정" },
-        { id: 3, value: "로그아웃" },
+        { id: 1, value: "프로젝트" ,icon: <GroupIcon width={20} height={20}/>},
+        { id: 2, value: "설정" ,icon: <SettingsIcon width={20} height={20}/>},
+        { id: 3, value: "로그아웃" ,icon: <LogOutIcon width={20} height={20}/>},
     ];
     const navItems: NavItem[] = [
         {
@@ -71,7 +75,8 @@ export default function SideBar() {
                         value={item.value}
                         onClick={handleItemClick}
                     >
-                        {item.value}
+                            {item.icon}
+                            {item.value}
                     </Select.Item>
                 ))}
             </Select.Content>

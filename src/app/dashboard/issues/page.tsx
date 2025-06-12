@@ -1,7 +1,489 @@
-import React from 'react'
+import { cn } from "@/lib/utils";
+import { Issue } from "@/types/Issue";
+import { CircleDashedIcon, GroupIcon, Users2Icon } from "lucide-react";
+import React from "react";
 
 export default function page() {
-  return (
-    <div>issue</div>
-  )
+    const issues: Issue[] = [
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+            id: 1,
+            number: "ISU-001",
+            userId: "1",
+            title: "첫 이슈!",
+            description: "이슈 해결 어렵따,,",
+            assignee: null,
+            tag: null,
+            status: "TO DO",
+            startDate: new Date("2024-01-01"),
+            endDate: new Date("2024-01-02"),
+            createdAt: new Date("2024-01-01"),
+            updatedAt: new Date("2024-01-01"),
+        },
+        {
+          id: 1,
+          number: "ISU-001",
+          userId: "1",
+          title: "첫 이슈!",
+          description: "이슈 해결 어렵따,,",
+          assignee: null,
+          tag: null,
+          status: "TO DO",
+          startDate: new Date("2024-01-01"),
+          endDate: new Date("2024-01-02"),
+          createdAt: new Date("2024-01-01"),
+          updatedAt: new Date("2024-01-01"),
+      },
+      {
+        id: 1,
+        number: "ISU-001",
+        userId: "1",
+        title: "첫 이슈!",
+        description: "이슈 해결 어렵따,,",
+        assignee: null,
+        tag: null,
+        status: "TO DO",
+        startDate: new Date("2024-01-01"),
+        endDate: new Date("2024-01-02"),
+        createdAt: new Date("2024-01-01"),
+        updatedAt: new Date("2024-01-01"),
+    },
+    {
+      id: 1,
+      number: "ISU-001",
+      userId: "1",
+      title: "첫 이슈!",
+      description: "이슈 해결 어렵따,,",
+      assignee: null,
+      tag: null,
+      status: "TO DO",
+      startDate: new Date("2024-01-01"),
+      endDate: new Date("2024-01-02"),
+      createdAt: new Date("2024-01-01"),
+      updatedAt: new Date("2024-01-01"),
+  },
+  {
+    id: 1,
+    number: "ISU-001",
+    userId: "1",
+    title: "첫 이슈!",
+    description: "이슈 해결 어렵따,,",
+    assignee: null,
+    tag: null,
+    status: "TO DO",
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-01-02"),
+    createdAt: new Date("2024-01-01"),
+    updatedAt: new Date("2024-01-01"),
+},
+{
+  id: 1,
+  number: "ISU-001",
+  userId: "1",
+  title: "첫 이슈!",
+  description: "이슈 해결 어렵따,,",
+  assignee: null,
+  tag: null,
+  status: "TO DO",
+  startDate: new Date("2024-01-01"),
+  endDate: new Date("2024-01-02"),
+  createdAt: new Date("2024-01-01"),
+  updatedAt: new Date("2024-01-01"),
+},
+    ];
+
+    return (
+        <div
+            className={cn(
+                "flex flex-col h-full"
+            )}
+        >
+            <div
+                className={cn(
+                    "border-b border-[var(--container-border)] bg-red",
+                    "flex items-center flex-[0.5] px-2"
+                )}
+            >
+                최상단
+            </div>
+            <div
+                className={cn(
+                    "border-b border-[var(--container-border)] bg-orange",
+                    "flex items-center flex-[0.5] px-2"
+                )}
+            >
+                상단
+            </div>
+            <div
+                className={cn(
+                    "bg-[var(--background-color)]",
+                    "scrollbar-container will-change-scroll flex-[8] h-full overflow-y-auto  z-1"
+                )}
+            >
+                {issues.map((item) => (
+                    <div
+                        className={cn(
+                            "text-sm",
+                            "hover:bg-amber-100/10 text-[var(--secondary)]",
+                            "flex h-[32px] p-2"
+                        )}
+                    >
+                        <div className="flex items-center flex-[0.5]">
+                            <CircleDashedIcon width={20} height={20} />
+                        </div>
+                        <div className="flex items-center flex-[1]">
+                            {item.number}
+                        </div>
+                        <div className="flex items-center flex-[6] cursor-pointer">
+                            {item.title}
+                        </div>
+                        <div className="flex items-center flex-[1] cursor-pointer">
+                            {item.status}
+                        </div>
+                        <div className="flex items-center flex-[0.5] cursor-pointer">
+                            Mar 19
+                        </div>
+                        <div className="flex items-center flex-[0.5] cursor-pointer">
+                            <Users2Icon width={20} height={20} />
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 }

@@ -6,6 +6,7 @@ import React from "react";
 export interface SelectItem {
     id: number;
     value: string;
+    icon: React.ReactNode;
 }
 
 interface SelectProps {
@@ -38,7 +39,7 @@ export function SelectContent({ children }: SelectProps) {
         <div
             className={cn(
                 "border border-[var(--border)] bg-[var(--container-background)] rounded-sm",
-                "absolute top-full left-0 w-full mt-2 p-2"
+                "absolute top-full left-0 items-center  w-full mt-2 p-2"
             )}
         >
             {children}
@@ -71,7 +72,7 @@ export function SelectItem({ value, children, onClick }: SelectItemProps) {
     };
 
     return (
-        <div className={cn("")} onClick={handleItemClick}>
+        <div className={cn("text-sm flex gap-4 items-center h-[32px] cursor-pointer hover:opacity-40")} onClick={handleItemClick}>
             {children}
         </div>
     );

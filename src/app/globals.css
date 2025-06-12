@@ -68,12 +68,13 @@
     --background: #fafafa;
     --foreground: #01010b;
     --primary: #39e291;
-    --secondary: #618e76;
+    --secondary: #b4b4b4;
     --border: #d7d7d7;
 
     /* 버튼 */
     --btn-primary: var(--primary);
     --btn-secondary: (--secondary);
+    --btn-border: var(--border);
     --btn-border: var(--border);
 
     /* 사이드 바 */
@@ -110,4 +111,18 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: hidden; /* 전체 페이지 스크롤 방지 */
+}
+
+.scrollbar-container::-webkit-scrollbar {
+    width: 5px;
+    background-color: none;
+}
+
+.scrollbar-container::-webkit-scrollbar-thumb {
+    background-color: #013f1445;
 }
